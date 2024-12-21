@@ -4,11 +4,11 @@ import Title from '../components/Title';
 import axios from 'axios';
 
 const statusColors = {
-  "Order Placed": "bg-yellow-500",
-  "Packing": "bg-orange-500",
-  "Shipped": "bg-orange-500",
+  "Order Placed": "bg-[#afb0f5]",
+  "Packing": "bg-[#ffbf00]",
+  "Shipped": "bg-[#ffbf00]",
   "Out for delivery": "bg-green-300",
-  "Delivered": "bg-green-700",
+  "Delivered": "bg-[#23aeb1]",
 };
 
 const Orders = () => {
@@ -112,7 +112,7 @@ const Orders = () => {
               {/* Status Button */}
               <div className="md:w-1/5 flex justify-end">
                 <button
-                    className={`px-4 py-2 font-medium rounded-md ${statusColors[order.status] || "bg-gray-100 text-gray-700"}`}
+                    className={`px-4 py-2 text-white font-medium rounded-md ${statusColors[order.status] || "bg-gray-100 text-gray-700"}`}
                 >
                     {order.status}
                 </button>

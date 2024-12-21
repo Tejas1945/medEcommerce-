@@ -8,7 +8,6 @@ import HomeBanner from '../components/HomeBanner'
 import HomeBanner2 from '../components/HomeBanner2'
 import Navbar1 from '../components/Navbar1'
 
-
 const Home = () => {
   return (
     <div>
