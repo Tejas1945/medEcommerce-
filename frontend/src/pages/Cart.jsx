@@ -10,7 +10,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (products.length > 0) {
-      const tempData = Object.keys(cartItems).map(itemId => ({
+      const tempData = Object.keys(cartItems).filter(itemId => cartItems[itemId] > 0).map(itemId => ({
         _id: itemId,
         quantity: cartItems[itemId]
       }));

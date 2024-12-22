@@ -99,7 +99,7 @@ const Navbar = () => {
                         className="py-2 px-4 border-b hover:bg-gray-200"
                         to="/collection"
                     >
-                        COLLECTION
+                        MEDICINES
                     </NavLink>
                     <NavLink
                         onClick={() => setVisible(false)}
@@ -117,9 +117,6 @@ const Navbar = () => {
                     </NavLink>
                 </div>
             </div>
-
-            
-
         </div>
         
     );
